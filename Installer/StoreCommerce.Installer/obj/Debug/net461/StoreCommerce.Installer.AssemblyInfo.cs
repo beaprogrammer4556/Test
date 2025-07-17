@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StoreCommerce.Installer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("9.48.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("9.48.0.0+a0699c679d4bed32a9a0dbc70ecf2b573b8516db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("9.48.0.0+34d247ee65b17fec938fb6b0765a3051e35832c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("StoreCommerce.Installer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StoreCommerce.Installer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("9.48.0.0")]
