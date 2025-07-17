@@ -1,0 +1,1 @@
+C:\CommerceSDK\NimbusRetail\POS.Extensions\obj\Debug\netstandard2.0\POS.Extensions.csproj.AssemblyReference.cache

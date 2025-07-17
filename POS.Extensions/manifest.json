@@ -1,0 +1,492 @@
+﻿{
+  "$schema": "./devDependencies/schemas/manifestSchema.json",
+  "name": "Nimbus.StoreCommerce",
+  "publisher": "NimbusRetail",
+  "version": "100.6.0.0",
+  "minimumPosVersion": "9.48.0.0",
+  "description": "Nimbus Retail Practice Customization.",
+  "dependencies": [
+    {
+      "alias": "knockout",
+      "format": "amd",
+      "modulePath": "Libraries/knockout"
+    }
+  ],
+  "components": {
+    "resources": {
+      "supportedUICultures": [ "en-US" ],
+      "fallbackUICulture": "en-US",
+      "culturesDirectoryPath": "Resources/Strings",
+      "stringResourcesFileName": "resources.resjson",
+      "description": "Description resources",
+      "name": "resources"
+    },
+    "dualDisplay": {
+      "customControl": {
+        "controlName": "DualDisplayCustomControl",
+        "htmlPath": "ViewExtensions/DuelDisplay/DualDisplayCustomControl.html",
+        "modulePath": "ViewExtensions/DuelDisplay/DualDisplayCustomControl",
+        "description": "DualDisplayCustomControl",
+        "name": "DualDisplayCustomControl"
+      }
+    },
+    "extend": {
+      "views": {
+        "SearchView": {
+          "customerAppBarCommands": [
+            {
+              "name": "AddCustomerToTxnSampleCommand",
+              "description": "AddCustomerToTxnSampleCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddCustomerToTxnSampleCommand"
+            },
+            {
+              "name": "AddCustomerToMghCustOrderCommand",
+              "description": "AddCustomerToMghCustOrderCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddCustomerToMghCustOrderCommand"
+            },
+            {
+              "name": "AddCustomerOrderCommand",
+              "description": "AddCustomerOrderCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddCustomerOrderCommand"
+            },
+            {
+              "name": "AddCustomerToSktCustOrderCommand",
+              "description": "AddCustomerToSktCustOrderCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddCustomerToSktCustOrderCommand"
+            },
+            {
+              "name": "AddCustomerToRepairOrderCommand",
+              "description": "AddCustomerToRepairOrderCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddCustomerToRepairOrderCommand"
+            },
+            {
+              "name": "AddCustomerToMghRepairOrderCommand",
+              "description": "AddCustomerToMghRepairOrderCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddCustomerToMghRepairOrderCommand"
+            },
+            {
+              "name": "AddStsCustomerOrderCommand",
+              "description": "AddStsCustomerOrderCommand",
+              "modulePath": "viewextensions/CustomerSeachBar/AddStsCustomerOrderCommand"
+            }
+          ]
+        },
+        "SimpleProductDetailsView": {
+          "appBarCommands": [
+            {
+              "name": "AddProductToTxnSampleCommand",
+              "description": "AddProductToTxnSampleCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToTxnSampleCommand"
+            },
+            {
+              "name": "AddProductToRepairOrderCommand",
+              "description": "AddProductToRepairOrderCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToRepairOrderCommand"
+            },
+            {
+              "name": "AddProductToMghRepairOrderCommand",
+              "description": "AddProductToMghRepairOrderCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToMghRepairOrderCommand"
+            },
+            {
+              "name": "AddProductToMghCustOrderCommand",
+              "description": "AddProductToMghCustOrderCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToMghCustOrderCommand"
+            },
+            {
+              "name": "AddProductToStsCustOrderCommand",
+              "description": "AddProductToStsCustOrderCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToStsCustOrderCommand"
+            },
+            {
+              "name": "AddProductToSktCustOrderCommand",
+              "description": "AddProductToSktCustOrderCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToSktCustOrderCommand"
+            },
+            {
+              "name": "AddProductToCustOrderCommand",
+              "description": "AddProductToCustOrderCommand",
+              "modulePath": "viewextensions/ProductDetail/AddProductToCustOrderCommand"
+            }
+          ]
+        }
+      },
+      "triggers": [
+        {
+          "triggerType": "PostLogOn",
+          "modulePath": "TriggerHandlers/PostLogOnTrigger",
+          "name": "PostLogOn",
+          "description": "Pos LogOn Trigger"
+        }
+      ]
+    },
+    "create": {
+      "operations": [
+        {
+          "name": "TxnSample",
+          "description": "Txn Sample Creation in Training",
+          "operationId": "4051",
+          "operationRequestFactoryPath": "Operations/TxnSample/TxnSampleOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/TxnSample/TxnSampleOperationRequestHandler"
+        },
+        {
+          "name": "CustOrder",
+          "description": "Cust Order Creation in Training",
+          "operationId": "4055",
+          "operationRequestFactoryPath": "Operations/CustOrder/CustOrderOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/CustOrder/CustOrderOperationRequestHandler"
+        },
+        {
+          "name": "SktStudent",
+          "description": "Student Form in Training",
+          "operationId": "4069",
+          "operationRequestFactoryPath": "Operations/SktStudent/SktStudentOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/SktStudent/SktStudentOperationRequestHandler"
+        },
+        {
+          "name": "StsStudent",
+          "description": "Student Form in Training",
+          "operationId": "4070",
+          "operationRequestFactoryPath": "Operations/StsStudent/StsStudentOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/StsStudent/StsStudentOperationRequestHandler"
+        },
+        {
+          "name": "StsStudentSearch",
+          "description": "Student Form in Training",
+          "operationId": "4071",
+          "operationRequestFactoryPath": "Operations/StsStudentSearch/StsStudentSearchOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/StsStudentSearch/StsStudentSearchOperationRequestHandler"
+        },
+        {
+          "name": "RepairOrder",
+          "description": "Repair Order Creation in Training",
+          "operationId": "4053",
+          "operationRequestFactoryPath": "Operations/RepairOrder/RepairOrderOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/RepairOrder/RepairOrderOperationRequestHandler"
+        },
+        {
+          "name": "PDC",
+          "description": "PDC Creation in Training",
+          "operationId": "4054",
+          "operationRequestFactoryPath": "Operations/PDC/PDCOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/PDC/PDCOperationRequestHandler"
+        },
+        {
+          "name": "SktCustOrder",
+          "description": "Customer Order Creation in Training",
+          "operationId": "4059",
+          "operationRequestFactoryPath": "Operations/SktCustOrder/SktCustOrderOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/SktCustOrder/SktCustOrderOperationRequestHandler"
+        },
+        {
+          "name": "MghCustOrder",
+          "description": "Customer Order Creation in Training",
+          "operationId": "4060",
+          "operationRequestFactoryPath": "Operations/MghCustOrder/MghCustOrderOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/MghCustOrder/MghCustOrderOperationRequestHandler"
+        },
+        {
+          "name": "StsCustOrder",
+          "description": "Customer Order Creation in Training",
+          "operationId": "4061",
+          "operationRequestFactoryPath": "Operations/StsCustOrder/StsCustOrderOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/StsCustOrder/StsCustOrderOperationRequestHandler"
+        },
+        {
+          "name": "RecevedOrderSku",
+          "description": "Customer Order Creation in Training",
+          "operationId": "4064",
+          "operationRequestFactoryPath": "Operations/RecevedOrderSku/RecevedOrderSkuOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/RecevedOrderSku/RecevedOrderSkuOperationRequestHandler"
+        },
+        {
+          "name": "SktDropdown",
+          "description": "Dropdown data fetch in Training",
+          "operationId": "4063",
+          "operationRequestFactoryPath": "Operations/SktDropdown/SktDropdownRequestFactory",
+          "operationRequestHandlerPath": "Operations/SktDropdown/SktDropdownOperationRequestHandler"
+        },
+        {
+          "name": "MghDropdown",
+          "description": "Dropdown data fetch in Training",
+          "operationId": "4065",
+          "operationRequestFactoryPath": "Operations/MghDropdown/MghDropdownOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/MghDropdown/MghDropdownOperationRequestHandler"
+        },
+        {
+          "name": "DiscountProduct",
+          "description": "Discount Product",
+          "operationId": "4066",
+          "operationRequestFactoryPath": "Operations/DiscountProduct/DiscountProductOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/DiscountProduct/DiscountProductOperationRequestHandler"
+        },
+        {
+          "name": "MghRepairOrder",
+          "description": "MghRepair Order Creation in Training",
+          "operationId": "4067",
+          "operationRequestFactoryPath": "Operations/MghRepairOrder/MghRepairOrderOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/MghRepairOrder/MghRepairOrderOperationRequestHandler"
+        },
+        {
+          "name": "MghStudentView",
+          "description": "MghStudeny Form Creation in Training",
+          "operationId": "4068",
+          "operationRequestFactoryPath": "Operations/MghStudent/MghStudentOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/MghStudent/MghStudentOperationRequestHandler"
+        },
+        {
+          "name": "SktSearchStudent",
+          "description": "Student Search in Training",
+          "operationId": "6001",
+          "operationRequestFactoryPath": "Operations/SktSearchStudent/SktSearchStudentOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/SktSearchStudent/SktSearchStudentOperationRequestHandler"
+        },
+        {
+          "name": "MghSearchStudent",
+          "description": "Student Search in Training",
+          "operationId": "4072",
+          "operationRequestFactoryPath": "Operations/MghSearchStudent/MghSearchStudentOperationRequestFactory",
+          "operationRequestHandlerPath": "Operations/MghSearchStudent/MghSearchStudentOperationRequestHandler"
+        }
+      ],
+      "views": [
+        {
+          "title": "TxnSampleView",
+          "name": "TxnSampleView",
+          "description": "Transaction Sample View",
+          "phonePageName": "TxnSampleView",
+          "pageName": "TxnSampleView",
+          "viewDirectory": "Views/TxnSample/",
+          "viewControllerPath": "Views/TxnSample/TxnSampleView"
+        },
+        {
+          "title": "SktSearchStudentView",
+          "name": "SktSearchStudentView",
+          "description": "SktSearchStudentView",
+          "phonePageName": "SktSearchStudentView",
+          "pageName": "SktSearchStudentView",
+          "viewDirectory": "Views/SktSearchStudent/",
+          "viewControllerPath": "Views/SktSearchStudent/SktSearchStudentView"
+        },
+        {
+          "title": "MghStudentView",
+          "name": "MghStudentView",
+          "description": "Student Form View",
+          "phonePageName": "MghStudentView",
+          "pageName": "MghStudentView",
+          "viewDirectory": "Views/MghStudent/",
+          "viewControllerPath": "Views/MghStudent/MghStudentView"
+        },
+        {
+          "title": "SktStudentView",
+          "name": "SktStudentView",
+          "description": "Student Form View",
+          "phonePageName": "SktStudentView",
+          "pageName": "SktStudentView",
+          "viewDirectory": "Views/SktStudent/",
+          "viewControllerPath": "Views/SktStudent/SktStudentView"
+        },
+        {
+          "title": "CustOrderView",
+          "name": "CustOrderView",
+          "description": "Order Sample View",
+          "phonePageName": "CustOrderView",
+          "pageName": "CustOrderView",
+          "viewDirectory": "Views/CustOrder/",
+          "viewControllerPath": "Views/CustOrder/CustOrderView"
+        },
+        {
+          "title": "RepairOrderView",
+          "name": "RepairOrderView",
+          "description": "Repair Order View",
+          "phonePageName": "RepairOrderView",
+          "pageName": "RepairOrderView",
+          "viewDirectory": "Views/RepairOrder/",
+          "viewControllerPath": "Views/RepairOrder/RepairOrderView"
+        },
+        {
+          "title": "MghRepairOrderView",
+          "name": "MghRepairOrderView",
+          "description": "MghRepair Order View",
+          "phonePageName": "RepairOrderView",
+          "pageName": "MghRepairOrderView",
+          "viewDirectory": "Views/MghRepairOrder/",
+          "viewControllerPath": "Views/MghRepairOrder/MghRepairOrderView"
+        },
+        {
+          "title": "PDCView",
+          "name": "PDCView",
+          "description": "PDC View",
+          "phonePageName": "PDCView",
+          "pageName": "PDCView",
+          "viewDirectory": "Views/PDC/",
+          "viewControllerPath": "Views/PDC/PDCView"
+        },
+        {
+          "title": "SAIKAT CUSTOMER ORDER",
+          "name": "SktCustOrder",
+          "description": "SktCustOrder",
+          "phonePageName": "SktCustOrder",
+          "pageName": "SktCustOrderView",
+          "viewDirectory": "Views/SktCustOrder/",
+          "viewControllerPath": "Views/SktCustOrder/SktCustOrderView"
+        },
+        {
+          "title": "MEGHA CUSTOMER ORDER",
+          "name": "MghCustOrder",
+          "description": "MghCustOrder",
+          "phonePageName": "MghCustOrder",
+          "pageName": "MghCustOrderView",
+          "viewDirectory": "Views/MghCustOrder/",
+          "viewControllerPath": "Views/MghCustOrder/MghCustOrderView"
+        },
+        {
+          "title": "SANTOSH CUSTOMER ORDER",
+          "name": "StsCustOrder",
+          "description": "StsCustOrder",
+          "phonePageName": "StsCustOrder",
+          "pageName": "StsCustOrderView",
+          "viewDirectory": "Views/StsCustOrder/",
+          "viewControllerPath": "Views/StsCustOrder/StsCustOrderView"
+        },
+        {
+          "title": "Receved Cust Order",
+          "name": "RecevedOrderSku",
+          "description": "RecevedOrderSku",
+          "phonePageName": "RecevedOrderSku",
+          "pageName": "RecevedOrderSkuView",
+          "viewDirectory": "Views/RecevedOrderSku/",
+          "viewControllerPath": "Views/RecevedOrderSku/RecevedOrderSkuView"
+        },
+        {
+          "title": "SKT Dropdown",
+          "name": "SKT Dropdown",
+          "description": "SKT Dropdown",
+          "phonePageName": "SktDropdown",
+          "pageName": "SktDropdownView",
+          "viewDirectory": "Views/SktDropdown/",
+          "viewControllerPath": "Views/SktDropdown/SktDropdownView"
+        },
+        {
+          "title": "MGH Dropdown",
+          "name": "MGH Dropdown",
+          "description": "MGH Dropdown",
+          "phonePageName": "MghDropdown",
+          "pageName": "MghDropdownView",
+          "viewDirectory": "Views/MghDropdown/",
+          "viewControllerPath": "Views/MghDropdown/MghDropdownView"
+        },
+        {
+          "title": "Discount Product Item",
+          "name": "DiscountProduct",
+          "description": "DiscountProduct",
+          "phonePageName": "DiscountProduct",
+          "pageName": "DiscountProductView",
+          "viewDirectory": "Views/DiscountProduct/",
+          "viewControllerPath": "Views/DiscountProduct/DiscountProductView"
+        },
+        {
+          "title": "Student  Entry",
+          "name": "StsStudent",
+          "description": "StsStudent",
+          "phonePageName": "StsStudent",
+          "pageName": "StsStudentView",
+          "viewDirectory": "Views/StsStudent/",
+          "viewControllerPath": "Views/StsStudent/StsStudentView"
+        },
+        {
+          "title": "Student  Search",
+          "name": "StsStudentSearch",
+          "description": "StsStudentSearch",
+          "phonePageName": "StsStudentSearch",
+          "pageName": "StsStudentSearchView",
+          "viewDirectory": "Views/StsStudentSearch/",
+          "viewControllerPath": "Views/StsStudentSearch/StsStudentSearchView"
+        },
+        {
+          "title": "Student  Search",
+          "name": "MghSearchStudent",
+          "description": "MghSearchStudent",
+          "phonePageName": "MghSearchStudent",
+          "pageName": "MghSearchStudentView",
+          "viewDirectory": "Views/MghSearchStudent/",
+          "viewControllerPath": "Views/MghSearchStudent/MghSearchStudentView"
+        }
+      ],
+      "templatedDialogs": [
+        {
+          "name": "TxnNumberSelectModule",
+          "description": "A templated dialog for searching Transaction.",
+          "htmlPath": "Controls/TxnSample/TxnNumberSelect.html",
+          "modulePath": "Controls/TxnSample/TxnNumberSelectModule"
+        },
+        {
+          "name": "SktStudentSelectModule",
+          "description": "A templated dialog for searching Student.",
+          "htmlPath": "Controls/SktStudent/SktStudentSelect.html",
+          "modulePath": "Controls/SktStudent/SktStudentSelectModule"
+        },
+        {
+          "name": "OrdNumberSelectModule",
+          "description": "A templated dialog for searching Order.",
+          "htmlPath": "Controls/CustOrder/OrdNumberSelect.html",
+          "modulePath": "Controls/CustOrder/OrdNumberSelectModule"
+        },
+        {
+          "name": "RepairOrderNumberSelectModule",
+          "description": "A templated dialog for searching Repair.",
+          "htmlPath": "Controls/RepairOrder/RepairOrderNumberSelect.html",
+          "modulePath": "Controls/RepairOrder/RepairOrderNumberSelectModule"
+        },
+        {
+          "name": "MghRepairOrderNumberSelectModule",
+          "description": "A templated dialog for searching MghRepair.",
+          "htmlPath": "Controls/MghRepairOrder/MghRepairOrderNumberSelect.html",
+          "modulePath": "Controls/MghRepairOrder/MghRepairOrderNumberSelectModule"
+        },
+        {
+          "name": "PDCSelectModule",
+          "description": "A templated dialog for searching PDC.",
+          "htmlPath": "Controls/PDC/PDCSelect.html",
+          "modulePath": "Controls/PDC/PDCSelectModule"
+        },
+        {
+          "name": "SktCustOrderNumberSelectModule",
+          "description": "A templated dialog for searching Customer Order.",
+          "htmlPath": "Controls/SktCustOrder/SktCustOrderNumberSelect.html",
+          "modulePath": "Controls/SktCustOrder/SktCustOrderNumberSelectModule"
+        },
+        {
+          "name": "MghCustOrderNumberSelectModule",
+          "description": "A templated dialog for searching Customer Order.",
+          "htmlPath": "Controls/MghCustOrder/MghCustOrderNumberSelect.html",
+          "modulePath": "Controls/MghCustOrder/MghCustOrderNumberSelectModule"
+        },
+        {
+          "name": "StsCustOrderSelectModule",
+          "description": "A templated dialog for searching Customer Order.",
+          "htmlPath": "Controls/StsCustOrder/StsCustOrderSelect.html",
+          "modulePath": "Controls/StsCustOrder/StsCustOrderSelectModule"
+        },
+        {
+          "name": "StsStudentSelectModule",
+          "description": "A templated dialog for searching Student Id.",
+          "htmlPath": "Controls/StsStudent/StsStudentSelect.html",
+          "modulePath": "Controls/StsStudent/StsStudentSelectModule"
+        },
+        {
+          "name": "DiscountProductNumberSelectModule",
+          "description": "A templated dialog for searching Discount Product.",
+          "htmlPath": "Controls/DiscountProduct/DiscountProductNumberSelect.html",
+          "modulePath": "Controls/DiscountProduct/DiscountProductNumberSelectModule"
+        },
+        {
+          "name": "SktStudentSearchSelectModule",
+          "description": "A dialog for searching Student.",
+          "htmlPath": "Controls/SktStudentSearch/SktStudentSearchSelect.html",
+          "modulePath": "Controls/SktStudentSearch/SktStudentSearchSelectModule"
+        }
+      ]
+    }
+  }
+}

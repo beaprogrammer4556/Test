@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\saikat\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\saikat\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.storecommerce\9.48.24184.2\contentFiles\cs\netstandard2.0\Program.cs" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.storecommerce\9.48.24184.2\contentFiles\cs\netstandard2.0\Program.cs')">
+      <NuGetPackageId>Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce</NuGetPackageId>
+      <NuGetPackageVersion>9.48.24184.2</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Program.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.storecommerce\9.48.24184.2\build\Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dynamics.commerce.sdk.installers.storecommerce\9.48.24184.2\build\Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_TypeScript_MSBuild Condition=" '$(PkgMicrosoft_TypeScript_MSBuild)' == '' ">C:\Users\saikat\.nuget\packages\microsoft.typescript.msbuild\4.0.6</PkgMicrosoft_TypeScript_MSBuild>
+    <PkgMicrosoft_Dynamics_Commerce_Sdk_Pos Condition=" '$(PkgMicrosoft_Dynamics_Commerce_Sdk_Pos)' == '' ">C:\Users\saikat\.nuget\packages\microsoft.dynamics.commerce.sdk.pos\9.48.24184.2</PkgMicrosoft_Dynamics_Commerce_Sdk_Pos>
+    <PkgMicrosoft_Dynamics_Commerce_Sdk_Installers_StoreCommerce Condition=" '$(PkgMicrosoft_Dynamics_Commerce_Sdk_Installers_StoreCommerce)' == '' ">C:\Users\saikat\.nuget\packages\microsoft.dynamics.commerce.sdk.installers.storecommerce\9.48.24184.2</PkgMicrosoft_Dynamics_Commerce_Sdk_Installers_StoreCommerce>
+  </PropertyGroup>
+</Project>

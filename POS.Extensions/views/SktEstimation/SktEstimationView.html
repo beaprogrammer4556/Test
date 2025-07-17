@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ESTIMATION</title>
+</head>
+<body>
+    <div class="combosProductsView">
+        <div class="scrollY">
+            <div class="marginLeft12" style="padding-right:20px !important">
+                <div class="row">
+                    <div class="col grow-landscape maxWidth680 marginTop12">
+                        <div class="row marginBottom12">
+                            <!--<div class="stretch">
+                                <label>Voucher Number</label>
+                                <input tabindex="-1" type="text" data-bind="value: viewModel.VOUCHERNO, valueUpdate: 'afterkeydown'" readonly />
+                            </div>-->
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>SKU Number</label>
+                                <!--<input tabindex="1" type="text" placeholder="enter a sku number here" data-bind="value: viewModel.SKUNUMBER, valueUpdate: 'afterkeydown'" />-->
+                                <select tabindex="-1" data-bind="value: viewModel.selectDropdownItem,options: viewModel.selectDropdown,optionsText: 'text',optionsValue: 'value'">
+                                </select>
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <!--<div class="col stretch">
+                                <label style="color:transparent !important">.</label>
+                                <button tabindex="2" type="button" style="background-color:#b43707 !important; left: 75% !important; width: 100%; color:#ffffff !important; font-size:10px !important; height: 30px !important; border: 1px solid #b43707; cursor:pointer !important" data-bind="event:{ click: viewModel.AddItemClickHandler }">
+                                    + Add Item
+                                </button>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <h3>SKU DETAIL</h3>
+                <br />
+                <div id="dataListLn" style="height:300px">
+                </div>
+                <br />
+                <div class="gutter40x40"></div>
+                <div class="col stretch">
+                    <label style="color:transparent !important">.</label>
+                    <button tabindex="13" type="button" style="background-color:#b43707 !important; left: 50% !important; width: 10%;margin-left:90% !important; color:#ffffff !important; font-size:15px !important; height: 30px !important; border: 1px solid #b43707; cursor:pointer !important" data-bind="event:{ click: viewModel.ShowIngredientClickHandler }">
+                        Show Ingredient
+                    </button>
+                </div>
+                <br />
+                <h3>SKU INGREDIENT DETAIL</h3>
+                <br />
+                <div id="dataListLn2" style="height:300px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

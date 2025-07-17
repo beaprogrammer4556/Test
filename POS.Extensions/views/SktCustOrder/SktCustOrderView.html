@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>POS Repair Order Form</title>
+</head>
+<body>
+    <div class="combosProductsView">
+        <div class="scrollY">
+            <div class="marginLeft12" style="padding-right:20px !important">
+                <div class="row">
+                    <!-- Left Side: Order Details -->
+                    <div class="col grow-landscape maxWidth680 marginTop12">
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Order Number</label>
+                                <input tabindex="-1" type="text" data-bind="value: viewModel.ORDERNUMBER, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Customer Account</label>
+                                <input tabindex="1" type="text" data-bind="value: viewModel.CUSTACCOUNT, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Customer Name</label>
+                                <input tabindex="2" type="text" data-bind="value: viewModel.CUSTNAME, valueUpdate: 'afterkeydown'" />
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Order Date</label>
+                                <input tabindex="-1" type="text" data-bind="value: viewModel.ORDERDATE, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Delivery Date</label>
+                                <div tabindex="3" id="datePickerSelectDate" data-bind="value: viewModel.DELIVERYDATE, valueUpdate: 'afterkeydown'"></div>
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Is Offer Order</label>
+                                <div tabindex="-1" id="offerToggle"></div>
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Is Floating Rate</label>
+                                <div tabindex="-1" id="floatingToggle"></div>
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Invent Location</label>
+                                <select tabindex="4"
+                                        data-bind="value: viewModel.SelectedInventLocation, options: viewModel.SelectInventLocation, optionsText: 'text', optionsValue: 'value'">
+                                </select>
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Total Amount</label>
+                                <input tabindex="-1" type="text" data-bind="value: viewModel.TOTALAMT, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Sales Person</label>
+                                <select tabindex="5"
+                                        data-bind="value: viewModel.SALESPERSON,options: viewModel.SelectDrpDown,optionsText: 'text',optionsValue: 'value'">
+                                </select>
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>REMARKS</label>
+                                <input tabindex="6" type="text" data-bind="value: viewModel.REMARKS, valueUpdate: 'afterkeydown'" />
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>ITEM ID</label>
+                                <input tabindex="7" type="text" data-bind="value: viewModel.ITEMID, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>CURRENT VALUE</label>
+                                <input tabindex="8" type="text" data-bind="value: viewModel.CVALUE, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Tot. metal. wt.</label>
+                                <input tabindex="8" type="text" data-bind="value: viewModel.TOTALMETALWT, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>PIECES</label>
+                                <input tabindex="9" type="text" data-bind="value: viewModel.PIECES, valueUpdate: 'afterkeydown'" />
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>TAX%</label>
+                                <input tabindex="10" type="text" data-bind="value: viewModel.TAXPERCENT, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Offer. odr. adv.</label>
+                                <input tabindex="11" type="text" data-bind="value: viewModel.OFFODRADV, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Expiry date</label>
+                                <input tabindex="12" type="text" data-bind="value: viewModel.EXPDATE, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label style="color:transparent !important">.</label>
+                                <button tabindex="11" type="button" style="background-color:#b43707 !important; left: 75% !important; width: 100%; color:#ffffff !important; font-size:10px !important; height: 30px !important; border: 1px solid #b43707; cursor:pointer !important" data-bind="event:{ click: viewModel.AddItemClickHandler }">
+                                    + Add Item
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+                <h3>Item List</h3>
+                <br />
+                <div id="dataListLn" style="height:300px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

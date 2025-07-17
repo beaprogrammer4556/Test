@@ -1,0 +1,11 @@
+C:\CommerceSDK\NimbusRetail\ScaleUnit\bin\Debug\netstandard2.0\ScaleUnit.deps.json
+C:\CommerceSDK\NimbusRetail\ScaleUnit\bin\Debug\netstandard2.0\ScaleUnit.dll
+C:\CommerceSDK\NimbusRetail\ScaleUnit\bin\Debug\netstandard2.0\ScaleUnit.pdb
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.csproj.AssemblyReference.cache
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.GeneratedMSBuildEditorConfig.editorconfig
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.AssemblyInfoInputs.cache
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.AssemblyInfo.cs
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.csproj.CoreCompileInputs.cache
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.dll
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.pdb
+C:\CommerceSDK\NimbusRetail\ScaleUnit\obj\Debug\netstandard2.0\ScaleUnit.sourcelink.json

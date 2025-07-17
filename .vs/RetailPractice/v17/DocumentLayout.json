@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\CommerceSDK\\NimbusRetail\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|c:\\commercesdk\\nimbusretail\\nimbusretail.commerceruntime\\sktdropdown\\sktdropdowndataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|solutionrelative:nimbusretail.commerceruntime\\sktdropdown\\sktdropdowndataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|c:\\commercesdk\\nimbusretail\\nimbusretail.commerceruntime\\sktdropdown\\sktdropdownentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|solutionrelative:nimbusretail.commerceruntime\\sktdropdown\\sktdropdownentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A3768D-40A3-4868-B8F5-388B93E44937}|ChannelDatabase\\ChannelDatabase.csproj|c:\\commercesdk\\nimbusretail\\channeldatabase\\retailextobj00000182.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{37A3768D-40A3-4868-B8F5-388B93E44937}|ChannelDatabase\\ChannelDatabase.csproj|solutionrelative:channeldatabase\\retailextobj00000182.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|c:\\commercesdk\\nimbusretail\\nimbusretail.commerceruntime\\kaleyraotp\\kaleyraotpdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|solutionrelative:nimbusretail.commerceruntime\\kaleyraotp\\kaleyraotpdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|c:\\commercesdk\\nimbusretail\\nimbusretail.commerceruntime\\kaleyraotp\\kaleyraotprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|solutionrelative:nimbusretail.commerceruntime\\kaleyraotp\\kaleyraotprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|c:\\commercesdk\\nimbusretail\\nimbusretail.commerceruntime\\kaleyraotp\\kaleyraotpresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|solutionrelative:nimbusretail.commerceruntime\\kaleyraotp\\kaleyraotpresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|c:\\commercesdk\\nimbusretail\\nimbusretail.commerceruntime\\repairorder\\repairorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2FA339-1CC1-45EA-A2D9-A6BC104FCC1F}|NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj|solutionrelative:nimbusretail.commerceruntime\\repairorder\\repairorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A3768D-40A3-4868-B8F5-388B93E44937}|ChannelDatabase\\ChannelDatabase.csproj|c:\\commercesdk\\nimbusretail\\channeldatabase\\retailextobj00000182.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{37A3768D-40A3-4868-B8F5-388B93E44937}|ChannelDatabase\\ChannelDatabase.csproj|solutionrelative:channeldatabase\\retailextobj00000182.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SktDropdownDataService.cs",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownDataService.cs",
+              "RelativeDocumentMoniker": "NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownDataService.cs",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownDataService.cs",
+              "RelativeToolTip": "NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownDataService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCgAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T07:56:40.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SktDropdownEntities.cs",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownEntities.cs",
+              "RelativeDocumentMoniker": "NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownEntities.cs",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownEntities.cs",
+              "RelativeToolTip": "NimbusRetail.CommerceRuntime\\SktDropdown\\SktDropdownEntities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T07:56:37.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RetailExtObj00000182.sql ",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\RetailExtObj00000182.sql",
+              "RelativeDocumentMoniker": "ChannelDatabase\\RetailExtObj00000182.sql",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\RetailExtObj00000182.sql",
+              "RelativeToolTip": "ChannelDatabase\\RetailExtObj00000182.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-08T07:11:16.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KaleyraOtpDataService.cs",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpDataService.cs",
+              "RelativeDocumentMoniker": "NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpDataService.cs",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpDataService.cs",
+              "RelativeToolTip": "NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpDataService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwGIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T06:18:07.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RepairOrderRequest.cs",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\RepairOrder\\RepairOrderRequest.cs",
+              "RelativeDocumentMoniker": "NimbusRetail.CommerceRuntime\\RepairOrder\\RepairOrderRequest.cs",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\RepairOrder\\RepairOrderRequest.cs",
+              "RelativeToolTip": "NimbusRetail.CommerceRuntime\\RepairOrder\\RepairOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T06:00:37.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KaleyraOtpResponse.cs",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpResponse.cs",
+              "RelativeDocumentMoniker": "NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpResponse.cs",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpResponse.cs",
+              "RelativeToolTip": "NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpResponse.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T05:33:17.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KaleyraOtpRequest.cs",
+              "DocumentMoniker": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpRequest.cs",
+              "RelativeDocumentMoniker": "NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpRequest.cs",
+              "ToolTip": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpRequest.cs",
+              "RelativeToolTip": "NimbusRetail.CommerceRuntime\\KaleyraOtp\\KaleyraOtpRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T05:32:58.987Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

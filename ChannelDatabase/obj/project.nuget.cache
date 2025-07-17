@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "svCSTPv5U2I=",
+  "success": true,
+  "projectFilePath": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\ChannelDatabase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saikat\\.nuget\\packages\\microsoft.dynamics.commerce.sdk.channeldatabase\\9.48.24184.2\\microsoft.dynamics.commerce.sdk.channeldatabase.9.48.24184.2.nupkg.sha512",
+    "C:\\Users\\saikat\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\saikat\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

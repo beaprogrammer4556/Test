@@ -1,0 +1,67 @@
+﻿//======================================================================================================
+//======================================= Store Hour Sample comment. ===================================
+//======================================================================================================
+{
+  //======================== View extension titles. ========================
+  "string_0001": "EXAMPLE VIEW",
+  "_string_0001.comment": "The Example View's title.",
+
+  //======================== Column names.  ========================
+  "string_1001": "Int data",
+  "_string_1001.comment": "A column title for the int data on the Example Entity.",
+
+  "string_1002": "String data",
+  "_string_1002.comment": "A column title for the string data on the Example Entity.",
+
+  "string_1003": "Extension property string data",
+  "_string_1003.comment": "A column title for the extension property data on the Example Entity.",
+
+  //======================== Dialog button labels. ========================
+  "string_2001": "Create",
+  "_string_2001.comment": "Create button used on a dialog for making a new entity.",
+
+  "string_2002": "Update",
+  "_string_2002.comment": "Update button used to commit changes made to an entity in an update dialog.",
+
+  "string_1006": "Delete",
+  "_string_1006.comment": "Delete button used to delete an entity instance in the list view.",
+
+  "string_2004": "Cancel",
+  "_string_2004.comment": "Cancel button shared across dialogs.",
+
+  "string_2005": "OK",
+  "_string_2005.comment": "OK button used to dismiss a dialog.",
+
+  //======================== Command labels. ========================
+  "string_3001": "Ping Test",
+  "_string_3001.comment": "A button label used in the app bar, when pressed two unbound endpoints are pinged.",
+
+  //======================== extensions strings. ========================
+
+  "string_0": "ID",
+  "_string_0.comment": "Item ID label text",
+
+  "string_1": "Name",
+  "_string_1.comment": "Item name label text",
+
+  "string_2": "Quantity",
+  "_string_2.comment": "Item cost label text",
+
+  "string_3": "Discount",
+  "_string_3.comment": "Total amount label text",
+
+  "string_4": "Cost",
+  "_string_4.comment": "Item cost label text",
+
+  "string_5": "Total Amount:",
+  "_string_5.comment": "Total amount label text",
+
+  "string_6": "Customer Name:",
+  "_string_6.comment": "Customer name label text",
+
+  "string_7": "Customer Account Number:",
+  "_string_7.comment": "Customer account number label text",
+
+  "string_8": "Employee Name:",
+  "_string_8.comment": "Employee name label text"
+}

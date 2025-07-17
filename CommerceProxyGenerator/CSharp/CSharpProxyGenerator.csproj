@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\CustomizationPackage.props" />
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CommerceProxyGeneratorApplicationType>CSharpExtensions</CommerceProxyGeneratorApplicationType>
+    <AssemblyName>CSharpProxyGenerator</AssemblyName>
+    <RootNamespace>CSharpProxyGenerator</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore" Version="$(CommerceChannelPackagesVersion)" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Proxy.ScaleUnit" Version="$(CommerceChannelPackagesVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NimbusRetail.CommerceRuntime\NimbusRetail.CommerceRuntime.csproj" />
+  </ItemGroup>
+
+  <!--Provide the path to the commerce runtime extension dll file.-->
+  <ItemGroup>
+    <RetailServerExtensionAssemblies Include="..\..\NimbusRetail.CommerceRuntime\bin\$(Configuration)\netstandard2.0\NimbusRetail.CommerceRuntime.dll" />
+  </ItemGroup>
+</Project>

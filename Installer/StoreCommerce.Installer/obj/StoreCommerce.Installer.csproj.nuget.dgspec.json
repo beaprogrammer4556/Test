@@ -1,0 +1,329 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\CommerceSDK\\NimbusRetail\\Installer\\StoreCommerce.Installer\\StoreCommerce.Installer.csproj": {}
+  },
+  "projects": {
+    "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\ChannelDatabase.csproj": {
+      "version": "9.48.0",
+      "restore": {
+        "projectUniqueName": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\ChannelDatabase.csproj",
+        "projectName": "ChannelDatabase",
+        "projectPath": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\ChannelDatabase.csproj",
+        "packagesPath": "C:\\Users\\saikat\\.nuget\\packages\\",
+        "outputPath": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\CommerceSDK\\NimbusRetail\\NuGet.Config",
+          "C:\\Users\\saikat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase": {
+              "target": "Package",
+              "version": "[9.48.*-*, 9.49.0)"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CommerceSDK\\NimbusRetail\\Installer\\StoreCommerce.Installer\\StoreCommerce.Installer.csproj": {
+      "version": "9.48.0",
+      "restore": {
+        "projectUniqueName": "C:\\CommerceSDK\\NimbusRetail\\Installer\\StoreCommerce.Installer\\StoreCommerce.Installer.csproj",
+        "projectName": "StoreCommerce.Installer",
+        "projectPath": "C:\\CommerceSDK\\NimbusRetail\\Installer\\StoreCommerce.Installer\\StoreCommerce.Installer.csproj",
+        "packagesPath": "C:\\Users\\saikat\\.nuget\\packages\\",
+        "outputPath": "C:\\CommerceSDK\\NimbusRetail\\Installer\\StoreCommerce.Installer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\CommerceSDK\\NimbusRetail\\NuGet.Config",
+          "C:\\Users\\saikat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\ChannelDatabase.csproj": {
+                "projectPath": "C:\\CommerceSDK\\NimbusRetail\\ChannelDatabase\\ChannelDatabase.csproj"
+              },
+              "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj": {
+                "projectPath": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj"
+              },
+              "C:\\CommerceSDK\\NimbusRetail\\POS.Extensions\\POS.Extensions.csproj": {
+                "projectPath": "C:\\CommerceSDK\\NimbusRetail\\POS.Extensions\\POS.Extensions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce": {
+              "target": "Package",
+              "version": "[9.48.*-*, 9.49.0)"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj": {
+      "version": "9.48.0",
+      "restore": {
+        "projectUniqueName": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj",
+        "projectName": "NimbusRetail.CommerceRuntime",
+        "projectPath": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\NimbusRetail.CommerceRuntime.csproj",
+        "packagesPath": "C:\\Users\\saikat\\.nuget\\packages\\",
+        "outputPath": "C:\\CommerceSDK\\NimbusRetail\\NimbusRetail.CommerceRuntime\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\CommerceSDK\\NimbusRetail\\NuGet.Config",
+          "C:\\Users\\saikat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU5100",
+            "NU5128"
+          ],
+          "warnAsError": [
+            "NU1605",
+            "NU1608",
+            "NU1701"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.Dynamics.Commerce.Sdk.Analyzers": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.48.*-*, 9.49.0)"
+            },
+            "Microsoft.Dynamics.Commerce.Sdk.Runtime": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[9.48.*-*, 9.49.0)"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CommerceSDK\\NimbusRetail\\POS.Extensions\\POS.Extensions.csproj": {
+      "version": "9.48.0",
+      "restore": {
+        "projectUniqueName": "C:\\CommerceSDK\\NimbusRetail\\POS.Extensions\\POS.Extensions.csproj",
+        "projectName": "POS.Extensions",
+        "projectPath": "C:\\CommerceSDK\\NimbusRetail\\POS.Extensions\\POS.Extensions.csproj",
+        "packagesPath": "C:\\Users\\saikat\\.nuget\\packages\\",
+        "outputPath": "C:\\CommerceSDK\\NimbusRetail\\POS.Extensions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\CommerceSDK\\NimbusRetail\\NuGet.Config",
+          "C:\\Users\\saikat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Dynamics.Commerce.Sdk.Pos": {
+              "target": "Package",
+              "version": "[9.48.*-*, 9.49.0)"
+            },
+            "Microsoft.TypeScript.MSBuild": {
+              "target": "Package",
+              "version": "[4.0.*, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

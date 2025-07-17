@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Received Order</title>
+</head>
+<body>
+    <div class="combosProductsView">
+        <div class="scrollY">
+            <div class="marginLeft12" style="padding-right:20px !important">
+                <div class="row">
+                    <div class="col grow-landscape maxWidth680 marginTop12">
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Item ID Number</label>
+                                <select tabindex="-1" data-bind="value: viewModel.ITEMID,options: viewModel.LstOrderNum,optionsText: 'text',optionsValue: 'value'">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <h3>Item List</h3>
+                <br />
+                <div id="dataListLn" style="height:300px">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

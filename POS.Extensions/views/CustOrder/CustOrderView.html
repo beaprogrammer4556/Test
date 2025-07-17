@@ -1,0 +1,149 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Transaction sample</title>
+</head>
+<body>
+    <div class="combosProductsView">
+        <div class="scrollY">
+            <div class="marginLeft12" style="padding-right:20px !important">
+                <div class="row">
+                    <div class="col grow-landscape maxWidth680 marginTop12">
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Transaction Date</label>
+                                <input tabindex="0" type="text" data-bind="value: viewModel.TRANSDATE, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>ORDER NUMBER </label>
+                                <input tabindex="2" type="text" data-bind="value: viewModel.ORDERNUMBER, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+
+                            <div class="gutter40x40"></div>
+
+                            <div class="stretch">
+                                <label>delivery Date</label>
+                                <input tabindex="3" type="text" data-bind="value: viewModel.DELIVERYDATE, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Customer account</label>
+                                <input tabindex="4" type="text" data-bind="value: viewModel.CUSTACCOUNT, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="stretch">
+                                <label>Customer mobile</label>
+                                <input tabindex="5" type="text" data-bind="value: viewModel.CUSTMOBILE, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Customer name</label>
+                                <input tabindex="6" type="text" data-bind="value: viewModel.CUSTNAME, valueUpdate: 'afterkeydown'" />
+                            </div>
+                        </div>
+
+                        <div class="row marginBottom12">
+
+                            <div class="stretch">
+                                <label>Net Total</label>
+                                <input tabindex="7" type="number" data-bind="value: viewModel.NETTOTAL, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Tax Total</label>
+                                <input tabindex="8" type="number" data-bind="value: viewModel.TAXTOTAL, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Gross Total</label>
+                                <input tabindex="9" type="number" data-bind="value: viewModel.GROSSTOTAL, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                        </div>
+                        <!--Design here-->
+                    </div>
+
+                    <!--Design here-->
+                </div>
+                <div class="row">
+                    <div class="col stretch">
+                        <label>ItemId</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.ITEMID, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Description</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.ITEMDESCRIPTION, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>QUANTITY</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.QUANTITY, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>MRP</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.MRP, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Disc %</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.DISCPERCENT, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Disc Amount</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.DISCAMOUNT, valueUpdate: 'afterkeydown'" readonly />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col stretch">
+                        <label>Net Amount</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.NETAMOUNT, valueUpdate: 'afterkeydown'" readonly />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Tax %</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.TAXPERCENT, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Tax Amt.</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.TAXAMOUNT, valueUpdate: 'afterkeydown'" readonly />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Total Amt.</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.TOTALAMOUNT, valueUpdate: 'afterkeydown'" readonly />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label style="color:transparent !important">.</label>
+                        <button type="button" style="background-color:#b43707 !important; left: 75% !important; width: 100%; color:#ffffff !important; font-size:10px !important; height: 30px !important; border: 1px solid #b43707; cursor:pointer !important" data-bind="event:{ click: viewModel.AddItemClickHandler }">
+                            + Add Item
+                        </button>
+                    </div>
+                </div>
+
+                <br />
+                <h3>Item List</h3>
+                <br />
+                <div id="dataListLn" style="height:300px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

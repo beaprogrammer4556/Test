@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Student Details Form</title>
+</head>
+<body>
+    <div class="combosProductsView">
+        <div class="scrollY">
+            <div class="marginLeft12" style="padding-right:20px !important">
+                <div class="row">
+                    <!-- Left Side: Order Details -->
+                    <div class="col grow-landscape maxWidth680 marginTop12">
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Student ID</label>
+                                <input tabindex="-1" type="text" data-bind="value: viewModel.STUDENTID, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Student Name</label>
+                                <input tabindex="1" type="text" data-bind="value: viewModel.STUDENTNAME, valueUpdate: 'afterkeydown',attr:{readonly: !viewModel.IsEditable()}" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Student Class</label>
+                                <input tabindex="2" type="text" data-bind="value: viewModel.STUDENTCLASS, valueUpdate: 'afterkeydown',,attr:{readonly: !viewModel.IsEditable()}" />
+                            </div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Subject One</label>
+                                <input tabindex="3" type="text" data-bind="value: viewModel.SUBJECT1, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Subject Two</label>
+                                <input tabindex="4" type="text" data-bind="value: viewModel.SUBJECT2, valueUpdate: 'afterkeydown'" />
+                            </div>
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label>Subject Three</label>
+                                <input tabindex="5" type="text" data-bind="value: viewModel.SUBJECT3, valueUpdate: 'afterkeydown'" />
+                            </div>
+                        </div>
+
+                        <div class="row marginBottom12">
+                            <div class="gutter40x40"></div>
+                            <div class="stretch">
+                                <label style="color:transparent !important">.</label>
+                                <button tabindex="11" type="button" style="background-color:#b43707 !important; left: 75% !important; width: 100%; color:#ffffff !important; font-size:10px !important; height: 30px !important; border: 1px solid #b43707; cursor:pointer !important" data-bind="event:{ click: viewModel.AddItemClickHandler }">
+                                    + Add Item
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+                <h3>Item List</h3>
+                <br />
+                <div id="dataListLn" style="height:300px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\bin\Debug\netstandard2.0\ChannelDatabase.deps.json
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\bin\Debug\netstandard2.0\ChannelDatabase.dll
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\bin\Debug\netstandard2.0\ChannelDatabase.pdb
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.csproj.AssemblyReference.cache
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.AssemblyInfoInputs.cache
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.AssemblyInfo.cs
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.csproj.CoreCompileInputs.cache
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.dll
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.pdb
+C:\CommerceSDK\NimbusRetail\ChannelDatabase\obj\Debug\netstandard2.0\ChannelDatabase.sourcelink.json

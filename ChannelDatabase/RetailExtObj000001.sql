@@ -1,0 +1,147 @@
+IF (SELECT OBJECT_ID('[ext].[EXAMPLETABLE]')) IS NULL 
+BEGIN
+    CREATE TABLE
+        [ext].[EXAMPLETABLE]
+    (
+        [EXAMPLEID]     BIGINT IDENTITY(1,1) NOT NULL,
+        [EXAMPLEINT]    INT NOT NULL DEFAULT ((0)),
+        [EXAMPLESTRING] NVARCHAR(64) NOT NULL DEFAULT (('')),
+        CONSTRAINT [I_EXAMPLETABLE_EXAMPLEID] PRIMARY KEY CLUSTERED 
+        (
+            [EXAMPLEID] ASC
+        ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+    ) ON [PRIMARY]
+
+    ALTER TABLE [ext].[EXAMPLETABLE] WITH CHECK ADD CHECK (([EXAMPLEID]<>(0)))
+END
+GO
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXAMPLETABLE] TO [DataSyncUsersRole]
+GO
+
+-- Create a stored procedure CRT can use to add entries to the custom table.
+
+IF OBJECT_ID(N'[ext].[INSERTEXAMPLE]', N'P') IS NOT NULL
+    DROP PROCEDURE [ext].[INSERTEXAMPLE]
+GO
+
+CREATE PROCEDURE [ext].[INSERTEXAMPLE]
+    @i_ExampleInt    INT,
+    @s_ExampleString NVARCHAR(64)
+AS
+BEGIN
+    SET NOCOUNT ON
+
+    INSERT INTO
+         ext.EXAMPLETABLE
+        (EXAMPLEINT, EXAMPLESTRING)
+    OUTPUT
+        INSERTED.EXAMPLEID
+    VALUES
+        (@i_ExampleInt, @s_ExampleString)
+END;
+GO
+
+GRANT EXECUTE ON [ext].[INSERTEXAMPLE] TO [UsersRole];
+GO
+
+GRANT EXECUTE ON [ext].[INSERTEXAMPLE] TO [DeployExtensibilityRole];
+GO
+
+-- Create the custom view that can query a complete Example Entity.
+
+IF (SELECT OBJECT_ID('[ext].[EXAMPLEVIEW]')) IS NOT NULL
+    DROP VIEW [ext].[EXAMPLEVIEW]
+GO
+
+CREATE VIEW [ext].[EXAMPLEVIEW] AS
+(
+    SELECT
+        et.EXAMPLEINT,
+        et.EXAMPLESTRING,
+        et.EXAMPLEID
+    FROM
+        [ext].[EXAMPLETABLE] et
+)
+GO
+
+GRANT SELECT ON OBJECT::[ext].[EXAMPLEVIEW] TO [UsersRole];
+GO
+
+GRANT SELECT ON OBJECT::[ext].[EXAMPLEVIEW] TO [DeployExtensibilityRole];
+GO
+
+-- Create a stored procedure CRT can use to perform updates.
+
+IF OBJECT_ID(N'[ext].[UPDATEEXAMPLE]', N'P') IS NOT NULL
+    DROP PROCEDURE [ext].[UPDATEEXAMPLE]
+GO
+
+CREATE PROCEDURE [ext].[UPDATEEXAMPLE]
+    @bi_Id           BIGINT,
+    @i_ExampleInt    INT,
+    @s_ExampleString NVARCHAR(64)
+AS
+BEGIN
+    SET NOCOUNT ON
+
+    UPDATE
+        ext.EXAMPLETABLE
+    SET
+        EXAMPLEINT = @i_ExampleInt,
+        EXAMPLESTRING = @s_ExampleString
+    WHERE
+        EXAMPLEID = @bi_Id
+END;
+GO
+
+GRANT EXECUTE ON [ext].[UPDATEEXAMPLE] TO [UsersRole];
+GO
+
+GRANT EXECUTE ON [ext].[UPDATEEXAMPLE] TO [DeployExtensibilityRole];
+GO
+
+-- Create a stored procedure CRT can use to delete Example Entities.
+
+IF OBJECT_ID(N'[ext].[DELETEEXAMPLE]', N'P') IS NOT NULL
+    DROP PROCEDURE [ext].DELETEEXAMPLE
+GO
+
+CREATE PROCEDURE [ext].DELETEEXAMPLE
+    @bi_Id           BIGINT
+AS
+BEGIN
+    SET NOCOUNT ON
+
+    DELETE FROM
+        ext.EXAMPLETABLE
+    WHERE
+        EXAMPLEID = @bi_Id
+END;
+GO
+
+GRANT EXECUTE ON [ext].DELETEEXAMPLE TO [UsersRole];
+GO
+
+GRANT EXECUTE ON [ext].DELETEEXAMPLE TO [DeployExtensibilityRole];
+GO
+
+
+IF (SELECT OBJECT_ID('[ext].[EMPLOYEE]')) IS NULL 
+BEGIN
+    CREATE TABLE
+        [ext].[EMPLOYEE]
+    (
+        [EMPID]     BIGINT IDENTITY(1,1) NOT NULL,
+        [EMPNAME]   NVARCHAR(64) NOT NULL DEFAULT (('')),
+        [EMPADDRESS] NVARCHAR(200) NOT NULL DEFAULT (('')),
+        CONSTRAINT [I_EMPLOYEE_EMPID] PRIMARY KEY CLUSTERED 
+        (
+            [EMPID] ASC
+        ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+    ) ON [PRIMARY]
+
+    ALTER TABLE [ext].[EMPLOYEE] WITH CHECK ADD CHECK (([EMPID]<>(0)))
+END
+GO
+

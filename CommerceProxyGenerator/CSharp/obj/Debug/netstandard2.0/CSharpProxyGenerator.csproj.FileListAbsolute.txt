@@ -1,0 +1,1 @@
+C:\CommerceSDK\NimbusRetail\CommerceProxyGenerator\CSharp\obj\Debug\netstandard2.0\CSharpProxyGenerator.csproj.AssemblyReference.cache

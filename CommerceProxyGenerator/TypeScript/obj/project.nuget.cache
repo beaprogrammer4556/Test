@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BSF6XcoFNtw=",
+  "success": true,
+  "projectFilePath": "C:\\CommerceSDK\\NimbusRetail\\CommerceProxyGenerator\\TypeScript\\TypeScriptProxyGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saikat\\.nuget\\packages\\microsoft.dynamics.commerce.tools.coreproxygenerator\\10.32.24061.1\\microsoft.dynamics.commerce.tools.coreproxygenerator.10.32.24061.1.nupkg.sha512",
+    "C:\\Users\\saikat\\.nuget\\packages\\microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore\\9.48.24170.3\\microsoft.dynamics.commerce.tools.extensionsproxygenerator.aspnetcore.9.48.24170.3.nupkg.sha512",
+    "C:\\Users\\saikat\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\saikat\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

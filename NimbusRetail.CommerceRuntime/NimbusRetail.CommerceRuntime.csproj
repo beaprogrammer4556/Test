@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\CustomizationPackage.props" />
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="RepairOrder\RepairOrderDataService.cs" />
+    <Compile Remove="RepairOrder\RepairOrderEntities.cs" />
+    <Compile Remove="RepairOrder\RepairOrderRequest.cs" />
+    <Compile Remove="RepairOrder\RepairOrderResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RepairOrder\RepairOrderDataService.cs" />
+    <None Include="RepairOrder\RepairOrderEntities.cs" />
+    <None Include="RepairOrder\RepairOrderRequest.cs" />
+    <None Include="RepairOrder\RepairOrderResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Runtime" Version="$(CommerceSdkPackagesVersion)" />
+  </ItemGroup>
+</Project>

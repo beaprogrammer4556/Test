@@ -1,0 +1,14 @@
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\bin\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.deps.json
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\bin\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.dll
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\bin\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.pdb
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\bin\Debug\netstandard2.0\Microsoft.CSharp.dll
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.csproj.AssemblyReference.cache
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.GeneratedMSBuildEditorConfig.editorconfig
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.AssemblyInfoInputs.cache
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.AssemblyInfo.cs
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.csproj.CoreCompileInputs.cache
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRe.26C62E22.Up2Date
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.dll
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.pdb
+C:\CommerceSDK\NimbusRetail\NimbusRetail.CommerceRuntime\obj\Debug\netstandard2.0\NimbusRetail.CommerceRuntime.sourcelink.json

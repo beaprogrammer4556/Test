@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Repair Order</title>
+</head>
+<body>
+    <div class="combosProductsView">
+        <div class="scrollY">
+            <div class="marginLeft12" style="padding-right:20px !important">
+                <div class="row">
+                    <div class="col grow-landscape maxWidth680 marginTop12">
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Transaction Date</label>
+                                <input tabindex="-1" type="text" data-bind="value: viewModel.TRANSDATE, valueUpdate: 'afterkeydown'" readonly />
+                            </div>
+                            <div class="gutter40x40"></div>
+                        </div>
+                        <div class="row marginBottom12">
+                            <div class="stretch">
+                                <label>Sku Number</label>
+                                <input tabindex="1" type="text" data-bind="value: viewModel.REPAIRORDERNUMBER, valueUpdate: 'afterkeydown', event: {keydown: fixedcursor}" />
+                            </div>
+
+                            <div class="row marginBottom12">
+                                <div class="stretch">
+                                    <label>Sku Number</label>
+                                    <input id="skuInput" tabindex="1" type="text"
+                                       data-bind="value: viewModel.SKUNUMBER, valueUpdate: 'afterkeydown', event: {keydown: fixedcursor}" /></div>
+
+                               
+
+                                <div class="gutter40x40"></div>
+                                <div class="stretch">
+                                    <label>Delivery Date</label>
+                                    <div tabindex="2" id="datePickerSelectDate" data-bind="value: viewModel.DELIVERYDATE, valueUpdate: 'afterkeydown'"></div>
+                                </div>
+                                <div class="gutter40x40"></div>
+                                <div class="stretch">
+                                    <label>Customer account</label>
+                                    <input tabindex="3" type="text" data-bind="value: viewModel.CUSTACCOUNT, valueUpdate: 'afterkeydown'" />
+                                </div>
+                            </div>
+                            <div class="row marginBottom12">
+                                <div class="stretch">
+                                    <label>Customer name</label>
+                                    <input tabindex="4" type="text" data-bind="value: viewModel.CUSTNAME, valueUpdate: 'afterkeydown'" />
+                                </div>
+                                <div class="gutter40x40"></div>
+                                <div class="stretch">
+                                    <label>Customer mobile</label>
+                                    <input tabindex="5" type="text" data-bind="value: viewModel.CUSTMOBILE, valueUpdate: 'afterkeydown'" />
+                                </div>
+                            </div>
+
+                            <div class="row marginBottom12">
+                                <!--<div class="stretch">
+            <label></label>
+            <div id="toggleExampleToggle"></div>
+        </div>-->
+
+                                <div class="stretch">
+                                    <label>Total Charges</label>
+                                    <input tabindex="-1" type="number" data-bind="value: viewModel.TOTALCHARGES, valueUpdate: 'afterkeydown'" readonly />
+                                </div>
+                                <!--<div class="gutter40x40"></div>
+        <div class="col stretch">
+            <label>Discount%</label>
+            <input tabindex="10" type="text" data-bind="value: viewModel.DISCOUNTPERCENT, valueUpdate: 'afterkeydown'" />
+        </div>-->
+                                <div class="gutter40x40"></div>
+                                <div class="col stretch">
+                                    <label>TAX TOTAL</label>
+                                    <input tabindex="-1" type="text" data-bind="value: viewModel.TAXTOTAL, valueUpdate: 'afterkeydown'" readonly />
+                                </div>
+                                <div class="gutter40x40"></div>
+                                <div class="col stretch">
+                                    <label>GROSS TOTAL</label>
+                                    <input tabindex="-1" type="text" data-bind="value: viewModel.GROSSTOTAL, valueUpdate: 'afterkeydown'" readonly />
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col stretch">
+                        <label>ItemName</label>
+                        <input tabindex="6" type="text" data-bind="value: viewModel.ITEMID, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Description</label>
+                        <input tabindex="7" type="text" data-bind="value: viewModel.ITEMDESCRIPTION, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Repair Charge</label>
+                        <input tabindex="8" type="text" data-bind="value: viewModel.REPAIRCHARGE, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Quantity</label>
+                        <input tabindex="9" type="text" data-bind="value: viewModel.QUANTITY, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>NET TOTAL</label>
+                        <input tabindex="9" type="text" data-bind="value: viewModel.NETTOTAL, valueUpdate: 'afterkeydown'" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col stretch">
+                        <label>Tax %</label>
+                        <input tabindex="10" type="text" data-bind="value: viewModel.TAXPERCENT, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Tax Amount</label>
+                        <input tabindex="11" type="text" data-bind="value: viewModel.TAXAMOUNT, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label>Total Amount</label>
+                        <input tabindex="12" type="text" data-bind="value: viewModel.TOTALAMOUNT, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="gutter40x40"></div>
+                    <div class="col stretch">
+                        <label style="color:transparent !important">.</label>
+                        <button tabindex="13" type="button" style="background-color:#b43707 !important; left: 75% !important; width: 100%; color:#ffffff !important; font-size:10px !important; height: 30px !important; border: 1px solid #b43707; cursor:pointer !important" data-bind="event:{ click: viewModel.AddItemClickHandler }">
+                            + Add Item
+                        </button>
+                    </div>
+                </div>
+
+                <br />
+                <h3>Item List</h3>
+                <br />
+                <div id="dataListLn" style="height:300px">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

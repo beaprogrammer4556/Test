@@ -1,0 +1,42 @@
+﻿namespace NimbusRetail
+{
+    namespace CommerceRuntime
+    {
+        using System;
+        using System.Collections.Generic;
+		using System.Threading.Tasks;
+		using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+
+        public class DefinePosExtensionTrigger : IRequestTriggerAsync
+        {
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get
+                {
+                    return new[] { typeof(GetExtensionPackageDefinitionsRequest) };
+                }
+            }
+
+			public async Task OnExecuted(Request request, Response response)
+			{
+				ThrowIf.Null(request, "request");
+				ThrowIf.Null(response, "response");
+
+				var getExtensionsResponse = (GetExtensionPackageDefinitionsResponse)response;
+				var extensionPackageDefinition = new ExtensionPackageDefinition();
+				extensionPackageDefinition.Name = "Nimbus.StoreCommerce";
+				extensionPackageDefinition.Publisher = "NimbusRetail";
+				extensionPackageDefinition.IsEnabled = true;
+				getExtensionsResponse.ExtensionPackageDefinitions.Add(extensionPackageDefinition);
+				await Task.FromResult(NullResponse.Instance).ConfigureAwait(false);
+			}
+
+			public async Task OnExecuting(Request request)
+			{
+				await Task.FromResult(NullResponse.Instance).ConfigureAwait(false);
+			}
+		}
+    }
+}
