@@ -39,7 +39,7 @@
                     return await this.ExecuteTxnSampleAsync((TxnSampleRequest)request).ConfigureAwait(false);
 
                 }
-                throw new NotSupportedException(string.Format("Request '{0}' is not supportable.", request.GetType()));
+                throw new NotSupportedException(string.Format("Request '{0}' is not supported now.", request.GetType()));
             }
 
             public async Task<TxnSampleResponse> ExecuteTxnSampleAsync(TxnSampleRequest request)
